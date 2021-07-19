@@ -1,10 +1,11 @@
 # Anastasia Hlushko
 
 ## Front-End Developer
+***
 ### My contacts:
 
-    **Email:** hlushko21@gmail.com
-    **Telegram:** @StasiaMore
+**Email:**  hlushko21@gmail.com
+**Telegram:**  @StasiaMore
 
 ### Summary:
 My goal is to get a job and to be a good programmer :woman_technologist:   
@@ -20,6 +21,7 @@ I finished the course in the Level Up IT school and created a site rolimpex.dp.u
 
 ### Education: 
 2017 - Level Up - HTML5, CSS3 and creating web sites with CMS WP
+
 2014 - Bachelor in Computer science - National Metallurgical Academy, Department of information technology and systems 
                                                     
 ### Languages:
