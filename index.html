@@ -3,33 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
   <link rel="stylesheet" href="style.css">
   <title>CV</title>
 </head>
 
 <body>
   <div class="container">
+    <nav>
+        <ul>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#contacts">Contacts</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#example-code">Example of code</a></li>
+          <li><a href="#languages">Languages</a></li>
+        </ul>
+      </nav>
+
       <header class="header-section">
           <img class="my-photo" src="img/my_photo.jpg" alt="My_photo">
           <div>
-              <h1 class="name">Hlushko Anastasia</h1>
+              <h1 class="name" id="about">Hlushko Anastasia</h1>
               <h3>Front-End Developer</h3>
           </div>
       </header>
           
       <main class="main">
-          <aside class="aside-section">
+          <aside class="aside-section" id="contacts">
               <h2>Contacts</h2>
               <ul>
                   <li>Email: hlushko21@gmail.com</li>
                   <li>Telegram: @StasiaMore</li>
               </ul>
     
-              <h2>Education</h2>
+              <h2 id="education">Education</h2>
               <p>2017 - Level Up - HTML5, CSS3 and creating web sites with CMS WP</p>
               <p>2014 - Bachelor in Computer science - National Metallurgical Academy, Department of information technology and systems</p>
     
-              <h2>Languages</h2>
+              <h2 id="languages">Languages</h2>
               <ul>
                   <li>Ukrainian, Russian - Native</li>
                   <li>English - A2</li>
@@ -43,7 +58,7 @@
               </section>
         
               <section>
-                  <h2>Skills</h2>
+                  <h2 id="skills">Skills</h2>
                   <ul>
                       <li>Web Development: HTML5, CSS3, basic JavaScript, basic jQuery</li>
                       <li>Development Tools: Sublime Text, Visual Studio Code</li>
@@ -53,11 +68,39 @@
               </section>
         
               <section>
-                  <h2>Experience</h2>
+                  <h2 id="experience">Experience</h2>
                   <p>I completed a course at the Level Up IT school and created a website.</p> 
-                  <p>You can see an example of the code at this link 
-                      <a href="http://rolimpex.dp.ua./">Rolimpex.dp.ua.</a>  
+                  <p>You can see an example of the code at this photo-link 
+                    <p><a target="_blank" href="http://rolimpex.dp.ua./"><img src="img/rl.jpg" width="250" 
+                        height="150" alt="example"></a></p>
                   </p>
+                  <h2 id="example-code">Example of code</h2>
+                  <pre><code>
+                    exports.min = function min (array) {
+                        if (array === undefined || array.length === 0) {
+                            return 0;
+                        } else {
+                            return Math.min(...array)};
+                    }
+                    
+                    exports.max = function max (array) {
+                        if (array === undefined || array.length === 0) {
+                            return 0;
+                        }
+                      return Math.max(...array);
+                    }
+                    
+                    exports.avg = function avg (array) {
+                        if (array === undefined || array.length === 0) {
+                            return 0;
+                        } else {
+                            let sum = 0;
+                            for (index in array) sum +=array[index];
+                            return sum/array.length;
+                        }
+                    }
+                  </code></pre>
+
               </section>
           </div>
       </main>
@@ -72,3 +115,6 @@
   </div>
 </body>
 </html>
+
+
+
